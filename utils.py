@@ -78,7 +78,7 @@ def scan_disks():
     correct_choice = False
     while not correct_choice == True:
         dev_sda_choice = input(f"{Fore.CYAN}>>> {Fore.RESET}")
-        if dev_sda_choice.startswith("/dev/sda") and dev_sda_choice in allparts:
+        if dev_sda_choice.startswith("/dev/") and dev_sda_choice in allparts:
             correct_choice = True
         elif dev_sda_choice == 'quit':
             absolute_exit()
